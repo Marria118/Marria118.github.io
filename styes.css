@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+section {
+    padding: 1rem 2rem;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+.project {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
