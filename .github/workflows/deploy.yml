@@ -1,0 +1,32 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to Server
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_ADDRESS }} << 'EOF'
+            # Navigate to your project directory
+            cd ~/www/marria
+            # Pull the latest changes
+            # git pull origin main --force
+            # Install dependencies if necessary
+      - name: Деплой файлов
+        run: |
+          rsync -avz --delete ./ ${{ secrets.SSH_ADDRESS }}:~/www/marria
+          # npm install # Adjust based on your project setup

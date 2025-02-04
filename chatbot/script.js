@@ -25,7 +25,7 @@ const sendMessage = () => {
 
 const sendTextRequest = async () => {
   try {
-    const response = await fetch("https://amr.pw/proxy", {
+    const response = await fetch("http://marria.it4p.ru/proxy", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({"messages": messages }),
