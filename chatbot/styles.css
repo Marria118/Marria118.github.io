@@ -1,11 +1,11 @@
 
-  #chat {
-    width: auto;
-    border: 2px solid rgb(104, 206, 104);
-    padding: 10px;
-    overflow-y: auto;
-    height: 100vh;
-  }
+#chat {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  margin-bottom: 10px
 
 .message {
   margin: 5px 0;
