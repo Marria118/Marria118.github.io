@@ -1,12 +1,16 @@
 body{
-  font-family: sans-serif;
-  background-color: rgba(169, 169, 169, 0.7);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
 }
 
 header{
-  background-color: rgba(169, 169, 169, 0.7) ;
+  background-color: rgba(182, 241, 156, 0.7);
   padding: 10px;
   color: black;
+    width:200px;
+    height:100vh;
+    position: fixed;
 }
 
 nav{
@@ -15,18 +19,18 @@ nav{
 
 nav ul{
   list-style-type: none;
-  margin:0;
   padding:0;
 }
 
 nav li{
-  display: inline-block;
-  margin-left: 20px;
+    padding:15px;
+    border-bottom:1px solid #5fcf55;
 }
 
 nav a{
   text-decoration: none;
   color: black;
+    display: block;
 }
 
 .logo{
@@ -37,6 +41,11 @@ nav a{
   border-radius:50%;
 }
 
+.mean-content{
+    margin-left: 200px;
+    padding:20px;
+    flex: 1;
+}
   .text{
     max-width: 500px;
     margin: 0 auto;
@@ -63,7 +72,7 @@ nav a{
     padding:10px 20px;
     width: 40px;
     height: 40px;
-    background-color: #4f395e;
+    background-color: #487739;
     color: white;
     border: none;
     border-radius: 50%;
